@@ -3,8 +3,4 @@ kind: Kustomization
 resources:
   - service.yaml
   - deployment.yaml
-namespace: default
-images:
-  - name: 720661188902.dkr.ecr.us-east-1.amazonaws.com/backend
-    newName: $IMAGE_REGISTRY/backend   
-    newTag: $IMAGE_TAG                 
+namespace: default              
