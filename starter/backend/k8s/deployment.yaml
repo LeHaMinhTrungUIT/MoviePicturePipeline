@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 720661188902.dkr.ecr.us-east-1.amazonaws.com/backend:a223213
+          image: 720661188902.dkr.ecr.us-east-1.amazonaws.com/backend  # Image will be updated by kustomize
           ports:
             - containerPort: 5000
       imagePullSecrets:

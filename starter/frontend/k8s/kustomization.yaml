@@ -4,3 +4,7 @@ resources:
   - service.yaml
   - deployment.yaml
 namespace: default
+images:
+  - name: 720661188902.dkr.ecr.us-east-1.amazonaws.com/frontend
+    newName: $IMAGE_REGISTRY/frontend   
+    newTag: $IMAGE_TAG   
