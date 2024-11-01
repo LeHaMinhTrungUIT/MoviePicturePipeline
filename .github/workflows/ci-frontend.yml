@@ -51,6 +51,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "18"
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: starter/frontend/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('starter/frontend/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
         working-directory: starter/frontend
