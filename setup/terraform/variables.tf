@@ -1,11 +1,22 @@
 variable "k8s_version" {
-  default = "1.25"
+  default = "1.31"
 }
 
 variable "enable_private" {
   default = false
 }
+variable "region" {
+  type    = string
+  default = "us-east-1"
+}
 
+variable "access_key" {
+  type = string
+}
+
+variable "secret_key" {
+  type = string
+}
 variable "public_az" {
   type        = string
   description = "Change this to a letter a-f only if you encounter an error during setup"
