@@ -27,6 +27,6 @@ spec:
           image: 959225330552.dkr.ecr.us-east-1.amazonaws.com/backend:latest  # Image will be updated by kustomize
           ports:
             - containerPort: 5000
-      imagePullPolicy: Always
+        imagePullPolicy: Always
       imagePullSecrets:
       - name: regcred

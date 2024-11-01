@@ -30,6 +30,6 @@ spec:
           env:
             - name: REACT_APP_MOVIE_API_URL
               value: abf5666db008240448e20657225edfc3-1121743710.us-east-1.elb.amazonaws.com
-      imagePullPolicy: Always
+          imagePullPolicy: Always
       imagePullSecrets:
       - name: regcred
