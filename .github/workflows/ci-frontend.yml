@@ -63,3 +63,6 @@ jobs:
       - name: Build application
         run: npm run build
         working-directory: starter/frontend
+      - name: Build Docker image
+        run: docker build -t ${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY_FRONTEND }}:${{ github.sha }} .
+        working-directory: starter/backend
